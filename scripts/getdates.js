@@ -1,3 +1,4 @@
+defer = true
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -58,17 +59,7 @@ function displayResults(data){
     currentTemp.textContent = temperature.toFixed(2);
     weatherIcon.src = iconUrl;
     captionDesc.textContent = description;
-}
 
-!function(d,s,id){
-    var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id)){
-        js=d.createElement(s);
-        js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        js.defer = true; // Adding the defer attribute.
-        fjs.parentNode.insertBefore(js,fjs);
-    }
 }(document,'script','weatherwidget-io-js');
 
 // Call function
