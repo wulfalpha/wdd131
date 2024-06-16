@@ -24,8 +24,8 @@
 
     header {
         background-color: var(--color-info);
-    / / modified color: var(--color-primary);
-    / / modified padding: 20 px 0;
+        color: var(--color-primary);
+        padding: 20px 0;
         text-align: center;
     }
 
@@ -53,13 +53,13 @@
 
     header nav ul li a {
         color: var(--color-active);
-    / / modified text-decoration: none;
+        text-decoration: none;
         font-weight: bold;
     }
 
     header nav ul li a:hover {
         color: var(--color-nav-hover);
-    / / modified text-decoration: underline;
+        text-decoration: underline;
     }
 
     main {
