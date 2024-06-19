@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Book of Mormon - Top 10</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <meta name="author" content="Andrew Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 131 - Andrew Davidson - Lesson 5 top ten assignment">
+</head>
+<body>
+<header>
+    <div id="content">
+        <a id="me-tile" class="centered-flexbox">
+            <img class ="fave" src="images/ME.webp" alt="Me">
+        </a>
+        <nav class="navigation">
+            <button id="menu" aria-label="Navigation Menu">
+                <span class="visually-hidden">Open Navigation Menu</span>
+            </button>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <h1 class="centered-flexbox">📖 Book of Mormon - Top 10</h1>
+    </div>
+</header>
+
+<div class="home-grid">
+    <main>
+        <label for="favchap">Enter Book and Chapter: </label>
+        <input type="text" id="favchap" placeholder="Alma 5">
+        <button id="submit" type="submit">Add Chapter</button>
+        <ul id="list"></ul>
+    </main>
+</div>
+
+<footer>
+    <section id="rights">
+        <p>WulfAlpha &copy; 2024 - Andrew Davidson</p>
+        <p>Date and Time: [now]</p>
+        <p>Last Modified: <span data-modified-date></span></p>
+        <p>United States:</p>
+        <img class="flag" src="images/oldglory.png" alt="US Flag">
+    </section>
+    <section class="social centered-flexbox">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter/X icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="Instagram icon">
+        </a>
+    </section>
+    <section id="validate">
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img class="jigsaw" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+        </p>
+    </section>
+</footer>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
