@@ -32,16 +32,6 @@
     max-width: 100%;
 }
 
-.cta-button {
-    /* previous styles */
-    transition: background-color 0.3s ease, color 0.3s ease; /* transitions */
-}
-.cta-button:hover {
-    background: rgba(255,255,255,0.5); // changes on hover
-color: black; // changes on hover
-    /* Add the necessary hover effects */
-}
-
 /* Navigation Anchor Linked Styles */
 nav a {
     display: block;
