@@ -1,19 +1,29 @@
-@media screen and (min-width: 500px){
-
-    header {
-        background-color: black;
-        color: whitesmoke;
-        padding: 1rem;
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+    /* Hide menu button on larger screens */
+    #menu {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+/* Show menu button on screens smaller than 768px */
+@media screen and (max-width: 640px) {
+    #menu {
+        display: block;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
+    /* Hide regular navigation links on small screens */
+    .navigation ul {
+        display: none;
     }
 
-    section {
-        padding: 1rem;
-        background-color: whitesmoke;
+    /* Show navigation links when menu is open */
+    .navigation.open ul {
+        display: block;
     }
 }
