@@ -1,0 +1,46 @@
+// Constants
+const WEATHER_API_KEY = '5a0d88a901126cc81d618d978ab200cb';
+const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=${WEATHER_API_KEY}&units=metric`;
+
+// Elements
+const heroImageElement = document.getElementById('hero-image');
+const temperatureElement = document.getElementById('temperature');
+const conditionsElement = document.getElementById('conditions');
+const windElement = document.getElementById('wind');
+const windChillElement = document.getElementById('wind-chill');
+const lastModifiedElement = document.getElementById('last-modified');
+
+// Functions
+const updateHeroImage = () => {
+    const smallSrc = 'https://source.unsplash.com/random/400x300/?united-kingdom';
+    const largeSrc = 'https://source.unsplash.com/random/800x600/?united-kingdom';
+    const sources = heroImageElement.querySelectorAll('source');
+    sources[0].srcset = smallSrc;
+    sources[1].srcset = largeSrc;
+    heroImageElement.querySelector('img').src = largeSrc;
+};
+
+const updateWeatherData = async () => {
+    try {
+        const response = await fetch(WEATHER_API_URL);
+        const data = await response.json();
+        temperatureElement.textContent = `<strong>Temperature:</strong> ${data.main.temp}°C`;
+        conditionsElement.textContent = `<strong>Conditions:</strong> ${data.weather[0].description}`;
+        windElement.textContent = `<strong>Wind:</strong> ${data.wind.speed} km/h`;
+        windChillElement.textContent = `<strong>Wind Chill:</strong> ${data.main.feels_like}°C`;
+    } catch (error) {
+        console.error('Error fetching weather data:', error);
+    }
+};
+
+const updateLastModifiedDate = () => {
+    const now = new Date();
+    lastModifiedElement.textContent = `Last Modification: ${now.toLocaleString()}`;
+};
+
+// Event Listeners
+document.addEventListener('DOMContentLoaded', () => {
+    updateHeroImage();
+    updateWeatherData();
+    updateLastModifiedDate();
+});

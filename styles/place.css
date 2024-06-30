@@ -1,0 +1,121 @@
+:root {
+    /* Light Colors */
+    --color-primary: #F1F1F1;    /* A very light gray to enhance the contrast. */
+    --color-active: #FFD700;     /* A golden color for highlights. */
+    --color-link: #FAB1A0;       /* Since you're using a dark theme */
+    --color-link-hover: #FF7F50; /* A coral color for link hover */
+    --color-link-focus: #BDB76B; /* A dark khaki color for link focus */
+    --color-link-visited: #FE7C7C; /* A blue violet color for visited link */
+
+    /* Dark Colors */
+    --color-info: #1F4451;         /* A bright sky blue for informational elements. */
+    --color-warning: #FF4500;      /* Brighter color for warning messages. */
+    --color-background: #1C1D21FF; /* The dark smoke background color you specified. */
+    --color-nav-hover: #36454F;    /* The color of navigation items on hover. */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+}
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+a:focus {
+    color: var(--color-link-focus);
+}
+
+a:visited {
+    color: var(--color-link-visited);
+}
+
+header {
+    color: var(--color-info);
+}
+
+.info {
+    color: var(--color-info);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+nav a:hover {
+    color: var(--color-nav-hover);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.place-title {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    color: #ffffff;
+    background: #bf0a30;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.data, .weather {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.data div, .weather div {
+    margin-bottom: 10px;
+}
+
+.hero {
+    flex: 2;
+    min-width: 300px;
+    background-color: #ccc;
+    margin: 10px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #ffffff;
+    background: #bf0a30;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .hero {
+        margin: 0 auto 20px auto;
+    }
+
+    .data, .weather {
+        margin: 10px auto;
+        max-width: 90%;
+    }
+}

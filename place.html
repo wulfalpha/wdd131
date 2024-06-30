@@ -1,10 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>WDD 131 - Dynamic Web Fundamentals - Andrew Davidson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/place.css">
+    <link rel="icon" href="images/favicon.ico" type="image/webp">
+    <meta name="author" content="Andrew Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Andrew Davidson">
 </head>
 <body>
-
+<header>
+    <div id="content">
+        <a id="me-tile" class="centered-flexbox">
+            <img class ="fave" src="images/ME.webp" alt="Me">
+        </a>
+        <nav class = "navigation">
+            <button id="menu" aria-label="Navigation Menu">
+                <span class = "visually-hidden">Open Navigation Menu</span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">LinkedIn</a> </li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a> </li>
+            </ul>
+        </nav>
+        <h1 class="centered-flexbox">WDD 131 - Dynamic Web Fundamentals - Andrew Davidson</h1>
+    </div>
+    <div class="container">
+        <header class="place-title">United Kingdom</header>
+        <main class="content">
+            <div class="data">
+                <div><strong>Area:</strong> 242,495 sq km</div>
+                <div><strong>Population:</strong> 67,886,011</div>
+                <div><strong>Capital:</strong> London</div>
+                <div><strong>Languages:</strong> English</div>
+                <div><strong>Currency:</strong> Pound Sterling</div>
+                <div><strong>Time Zone:</strong> UTC+0</div>
+                <div><strong>Calling Code:</strong> +44</div>
+                <div><strong>Internet TLD:</strong> .uk</div>
+            </div>
+            <div class="hero">
+                <picture id="hero-image">
+                    <source media="(max-width: 768px)" srcset="">
+                    <source media="(min-width: 769px)" srcset="">
+                    <img src="" alt="United Kingdom">
+                </picture>
+            </div>
+            <div class="weather">
+                <div id="temperature"><strong>Temperature:</strong> </div>
+                <div id="conditions"><strong>Conditions:</strong> </div>
+                <div id="wind"><strong>Wind:</strong> </div>
+                <div id="wind-chill"><strong>Wind Chill:</strong> </div>
+            </div>
+        </main>
+        <footer class="footer">
+            ©2024 - Andrew Davidson - United Kingdom
+            <br>
+            <span id="last-modified">Last Modification: </span>
+        </footer>
+    </div>
+    <script async defer src="scripts/get-weather.js"></script>
+</header>
 </body>
 </html>
