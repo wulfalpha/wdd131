@@ -80,6 +80,9 @@ nav a:hover {
     flex: 1;
     min-width: 200px;
 }
+a::after {
+    content: " 🇬🇧";
+}
 
 .data div, .weather div {
     margin-bottom: 10px;
