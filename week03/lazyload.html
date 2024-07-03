@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Andrew Davidson - WDD 230 - Web Frontend Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/lazyload.css">
+    <link rel="icon" href="images/favicon.ico" type="image/webp">
+    <meta name="author" content="Andrew Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 131 - lazy loading assignment">
+</head>
+<body>
+<header>
+    <div id="content">
+        <a id="me-tile" class="centered-flexbox">
+            <img class ="fave" src="images/ME.webp" alt="Me">
+        </a>
+        <nav class="navigation">
+            <button id="menu" aria-label="Navigation Menu">
+                <span class="visually-hidden">Open Navigation Menu</span>
+            </button>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <h1 class="centered-flexbox">W7 Lazy loading activity.</h1>
+    </div>
+</header>
+<main class="home-grid">
+    <div class="gallery centered-flexbox">
+        <img src="https://placekitten.com/400/600" alt="Random Kitten Placeholder" loading="lazy">
+        <img src="https://placekitten.com/400/600" alt="Random Kitten Placeholder" loading="lazy">
+        <img src="https://placekitten.com/400/600" alt="Random Kitten Placeholder" loading="lazy">
+        <img src="https://placekitten.com/400/600" alt="Random Kitten Placeholder" loading="lazy">
+        <img src="https://placekitten.com/400/600" alt="Random Kitten Placeholder" loading="lazy">
+        <img src="https://placekitten.com/400/600" alt="Random Kitten Placeholder" loading="lazy">
+    </div>
+</main>
+</body>
+<footer>
+    <section id="rights">
+        <p>WulfAlpha &copy; 2024 - Andrew Davidson</p>
+        <p>Date and Time: [now]</p>
+        <p>Last Modified: <span data-modified-date></span></p>
+        <p>United States:</p>
+        <img class="flag" src="images/oldglory.png" alt="US Flag">
+    </section>
+    <section class="social centered-flexbox">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter/X icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="Instagram icon">
+        </a>
+    </section>
+    <section id="validate">
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img class="jigsaw" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+        </p>
+    </section>
+</footer>
+<script src="scripts/lazyload.js"></script>
+</html>
