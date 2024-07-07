@@ -1,0 +1,250 @@
+:root {
+    /* Light Colors */
+    --color-primary: #F1F1F1;    /* A very light gray to enhance the contrast. */
+    --color-active: #FFD700;     /* A golden color for highlights. */
+    --color-link: #FAB1A0;       /* Since you're using a dark theme */
+    --color-link-hover: #FF7F50; /* A coral color for link hover */
+    --color-link-focus: #BDB76B; /* A dark khaki color for link focus */
+    --color-link-visited: #FE7C7C; /* A blue violet color for visited link */
+
+    /* Dark Colors */
+    --color-info: #1F4451;         /* A bright sky blue for informational elements. */
+    --color-warning: #FF4500;      /* Brighter color for warning messages. */
+    --color-background: #1C1D21FF; /* The dark smoke background color you specified. */
+    --color-nav-hover: #36454F;    /* The color of navigation items on hover. */
+}
+
+/* Extracted similar style into a class */
+.centered-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 100%;
+}
+
+/* Navigation Anchor Linked Styles */
+nav a {
+    display: block;
+    color: var(--color-primary);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--color-background);
+    color: white;
+}
+.active {
+    color: var(--color-active);
+}
+ul .active::before {
+    content: "🕹️";  /* Just a way finding symbol for the user */
+}
+@media screen and (max-width: 960px) {
+    nav a:hover {
+        background-color: var(--color-nav-hover);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.weatherwidget-io {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#rights {
+    background: var(--color-background);
+    color: var(--color-link);
+    padding: 20px;
+    text-align: center;
+}
+
+.flag {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+body {
+    font-family: 'Sansita', Arial, sans-serif; /* Added a backup font */
+    color: var(--color-primary);
+    background-color: var(--color-background);
+}
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;  /* Adjust based on your preference */
+}
+.board {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+ol li a{
+    color: var(--color-link)
+}
+
+ol li a:active {
+    color: var(--color-active); /* While you're clicking on the link (mouse button down), the link will turn this color */
+}
+
+
+ol li a:hover {
+    color: var(--color-link-hover)
+}
+
+ol li a:focus {
+    color: var(--color-link-focus);
+}
+
+ol li a:visited {
+    color: var(--color-link-visited);
+}
+
+ol > li::before {
+    content: "🕹️ ";
+}
+ol > li::marker {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--color-warning);
+    font-size: 2rem;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: auto;
+}
+.overlay {
+    width: 100%;
+}
+.hero {
+    width: 100%;
+    height: auto;
+}
+#me-tile .fave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /* This line will make sure images cover all available space but maintains its aspect ratio. */
+    margin-top: 10px;  /* Adjust as needed to create space at the top */
+    margin-bottom: 10px;  /* Adjust as needed to create space at the bottom */
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Add other necessary styling */
+}
+#rights, #validate {
+    text-align: center;
+    padding: 10px;
+    /* Add other necessary styling */
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jigsaw {
+    border:0;width:88px;height:31px
+}
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: relative;
+    padding: 1rem;
+}
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+.active::before {
+    content: "🕹️";  /* just a way finding symbol for the user */
+}
+#menu::before {
+    content: "🍔";
+}
+.overlay {
+    position: relative;
+    width: 100%;
+    max-width: 960px; /* For desktop view */
+    min-height: 100vh;
+}
+.overlay .hero .img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.overlay .hero {
+    position: absolute;  /* positioning the hero image absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%; /* full width */
+    z-index: -1; /* to place behind the content */
+}
+#menu.open::before {
+    content: "❎";
+}
+/* mobile **************************/
+header {
+    background-color: var(--color-info);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+header,
+main {
+    max-width: 767px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2rem;
+}
+nav {
+    background-color: var(--color-background);
+    margin: 0 auto;
+    max-width: 800px;
+}
+nav ul {
+    list-style-type: none;
+}
