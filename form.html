@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>WDD 131 - Web Form - Andrew Davidson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico" type="image/webp">
+    <meta name="author" content="Andrew Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 131 - Web Form - Andrew Davidson">
+</head>
+<body>
+<header>
+    <div id="content">
+        <a id="me-tile" class="centered-flexbox">
+            <img class ="fave" src="images/ME.webp" alt="Me">
+        </a>
+        <nav class = "navigation">
+            <button id="menu" aria-label="Navigation Menu">
+                <span class = "visually-hidden">Open Navigation Menu</span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">LinkedIn</a> </li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a> </li>
+            </ul>
+        </nav>
+        <h1 class="centered-flexbox">WDD 131 - Web Form - Andrew Davidson</h1>
+    </div>
+</header>
+<main class="home-grid">
+    <section class="review-form">
+        <div class="form-container">
+            <h1>Product Review</h1>
+        <form>
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name">
+                <option value="" disabled selected>Choose a Product ...</option>
+                <!-- Add product options here -->
+            </select>
+
+            <label>Overall Rating</label>
+            <div class="rating">
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+            </div>
+
+            <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date">
+
+            <label>Which features did you find useful in the product? (Check all that apply)</label>
+            <div class="features">
+                <input type="checkbox" id="durability" name="feature" value="Durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" id="ease-of-use" name="feature" value="Ease of Use">
+                <label for="ease-of-use">Ease of Use</label>
+                <input type="checkbox" id="performance" name="feature" value="Performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="design" name="feature" value="Design">
+                <label for="design">Design</label>
+            </div>
+
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="name">Your Name (Optional)</label>
+            <input type="text" id="name" name="name">
+
+            <button type="submit">Post Review</button>
+        </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <section id="rights">
+        <p>WulfAlpha &copy; 2024 - Andrew Davidson</p>
+        <p>Date and Time: [now]</p>
+        <p>Last Modified: <span data-modified-date></span></p>
+        <p>United States:</p>
+        <img class="flag" src="images/oldglory.png" alt="US Flag">
+    </section>
+    <section class="social centered-flexbox">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter/X icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="Instagram icon">
+        </a>
+    </section>
+    <section id="validate">
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img class="jigsaw" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+        </p>
+    </section>
+</footer>
+<script src="scripts/getdates.js"></script>
+</body>
+</html>
