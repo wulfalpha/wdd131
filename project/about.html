@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kitten Facts - Andrew Davidson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico" type="image/webp">
+    <meta name="author" content="Andrew Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn fascinating facts about kittens and how to care for them.">
+</head>
+<body>
+<header>
+    <div id="content">
+        <a id="hero" class="centered-flexbox" href="kittenfacts.html">
+            <img class="hero-img" src="images/hero.webp" alt="Hero image of a kitten">
+        </a>
+        <nav class="navigation">
+            <button id="menu" aria-label="Navigation Menu">
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <ul>
+                <li><a href="kittenfacts.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="breeds.html">Breeds</a></li>
+                <li><a href="care.html">Care and Feeding</a></li>
+                <li><a href="dykn.html">Did you know?</a></li>
+                <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <h1 class="centered-flexbox">Kitten Facts - Andrew Davidson</h1>
+    </div>
+</header>
+<main>
+    <section id="home-grid">
+        <h2>Who are Kitten Facts?</h2>
+        <p>We are interested and enamored "staff" of our feline friends. Our goal is to spread information and undestanding about kittens everywhere.</p>
+    </section>
+    <section class="sidebar">
+        <aside>
+            <h3>Adopt a Kitten</h3>
+            <p>Looking for a new furry friend? Check out our available kittens for adoption!</p>
+            <a href="adoption.html" class="button">Adopt Now</a>
+        </aside>
+    </section>
+</main>
+<footer>
+    <section id="rights">
+        <p>WulfAlpha &copy; 2024 - Andrew Davidson</p>
+        <p>Date and Time: <span id="current-date-time"></span></p>
+        <p>Last Modified: <span data-modified-date></span></p>
+        <p>United States:</p>
+        <img class="flag" src="images/oldglory.png" alt="US Flag">
+    </section>
+    <section class="social centered-flexbox">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter/X icon">
+        </a>
+    </section>
+    <section id="validate">
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img class="jigsaw" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+        </p>
+    </section>
+</footer>
+<script src="scripts/kittenfacts.js"></script>
+<script>
+    document.getElementById('current-date-time').textContent = new Date().toLocaleString();
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* Base Styles */
+:root {
+    /* Light Colors */
+    --color-primary: #cdd6f4;
+    --color-active: #89b4fa;
+    --color-link: #fab387;
+    --color-link-hover: #FF7F50;
+    --color-link-focus: #f5e0dc;
+    --color-link-visited: #f38ba8;
+
+    /* Dark Colors */
+    --color-info: #b4befe;
+    --color-warning: #f38ba8;
+    --color-background: #181825;
+    --color-nav-hover: #6c7086;
+}
+
+body {
+    font-family: 'Sansita', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-background);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary);
+    margin: 0.5em 0;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+a:focus {
+    color: var(--color-link-focus);
+}
+
+a:visited {
+    color: var(--color-link-visited);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+}
+
+#menu span {
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    height: 3px;
+    width: 100%;
+    display: block;
+}
+
+#nav-links {
+    display: none;
+}
+
+#nav-links.open {
+    display: flex;
+}
+
+#nav-links li {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+#nav-links li a {
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    #nav-links {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+#home-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+}
+
+.card {
+    background-color: var(--color-background);
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: var(--color-background);
+    padding: 1rem;
+    margin-left: 1rem;
+    flex: 1;
+}
+
+footer {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+footer img.flag {
+    width: 50px;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.social img {
+    width: 30px;
+    height: auto;
+    margin: 0 0.5rem;
+}
+
+footer .jigsaw {
+    width: 80px;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--color-active);
+    color: var(--color-background);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--color-link-hover);
+}

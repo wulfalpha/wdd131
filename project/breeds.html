@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kitten Facts - Andrew Davidson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico" type="image/webp">
+    <meta name="author" content="Andrew Davidson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn fascinating facts about different kitten breeds.">
+</head>
+<body>
+<header>
+    <div id="content">
+        <a id="hero" class="centered-flexbox">
+            <img class="hero-img" src="images/hero.webp" alt="Hero image of a kitten">
+        </a>
+        <nav class="navigation">
+            <button id="menu" aria-label="Navigation Menu">
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <ul id="nav-links">
+                <li><a href="kittenfacts.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="breeds.html">Breeds</a></li>
+                <li><a href="care.html">Care and Feeding</a></li>
+                <li><a href="dykn.html">Did you know?</a></li>
+                <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <h1 class="centered-flexbox">Kitten Facts - Andrew Davidson</h1>
+    </div>
+</header>
+<main>
+    <section id="home-grid">
+        <h2>Common Breeds</h2>
+        <section class="card">
+            <h3>American Shorthair</h3>
+            <img src="images/shorthair.webp" alt="American Shorthair">
+            <p>The American Shorthair is known for its friendly and adaptable nature, making it a popular choice among families. These cats are robust and have a variety of coat colors and patterns. They are also known for their hunting skills, originally bred to keep farms and ships free of rodents.</p>
+        </section>
+        <section class="card">
+            <h3>Ragdoll Cat</h3>
+            <img src="images/ragdoll.webp" alt="Ragdoll Cat">
+            <p>Ragdoll cats are large, affectionate, and have striking blue eyes. They are known for their calm and placid temperament, often going limp when picked up, which is how they got their name. Ragdolls are great companions and are particularly good with children and other pets.</p>
+        </section>
+        <section class="card">
+            <h3>Maine Coon</h3>
+            <img src="images/maine-coon.webp" alt="Maine Coon">
+            <p>Maine Coons are one of the largest domesticated cat breeds, known for their intelligence and friendly disposition. They have a distinctive appearance with tufted ears and a bushy tail. These cats are also sociable and can get along well with other animals.</p>
+        </section>
+        <section class="card">
+            <h3>Sphynx Cat</h3>
+            <img src="images/sphinx.webp" alt="Sphynx Cat">
+            <p>The Sphynx cat is renowned for its hairless appearance, which is a result of a natural genetic mutation. Despite their lack of fur, they are known to be affectionate and enjoy human companionship. Sphynx cats are also energetic and playful.</p>
+        </section>
+        <section class="card">
+            <h3>Siamese Cat</h3>
+            <img src="images/siamese.webp" alt="Siamese Cat">
+            <p>Siamese cats are known for their striking blue almond-shaped eyes and sleek, elegant bodies. They are highly social, vocal, and intelligent, often forming strong bonds with their human companions. Siamese cats thrive on interaction and enjoy being the center of attention.</p>
+        </section>
+        <section class="card">
+            <h3>Tortoiseshell Cat</h3>
+            <img src="images/tortoiseshell.webp" alt="Tortoiseshell Cat">
+            <p>Tortoiseshell cats, often referred to as "torties," are not a specific breed but a color pattern found in many breeds. They are known for their distinctively mottled coats of black, red, and orange. Torties are often described as having strong, independent personalities.</p>
+        </section>
+    </section>
+    <aside class="sidebar">
+        <h3>Adopt a Kitten</h3>
+        <p>Looking for a new furry friend? Check out our available kittens for adoption!</p>
+        <a href="adoption.html" class="button">Adopt Now</a>
+    </aside>
+</main>
+<footer>
+    <section id="rights">
+        <p>WulfAlpha &copy; 2024 - Andrew Davidson</p>
+        <p>Date and Time: <span id="current-date-time"></span></p>
+        <p>Last Modified: <span data-modified-date></span></p>
+        <p>United States:</p>
+        <img class="flag" src="images/oldglory.png" alt="US Flag">
+    </section>
+    <section class="social centered-flexbox">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter/X icon">
+        </a>
+    </section>
+    <section id="validate">
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img class="jigsaw" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+        </p>
+    </section>
+</footer>
+<script src="scripts/kittenfacts.js"></script>
+<script>
+    document.getElementById('current-date-time').textContent = new Date().toLocaleString();
+</script>
+</body>
+</html>
